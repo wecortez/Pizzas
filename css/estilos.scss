@@ -1,0 +1,780 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1366px;
+    margin: 27px auto 0px auto;
+    .header {
+        .grid {
+            .logo {
+                img {
+                    width: 257px;
+                }
+            }
+            .menu {
+                /* oculto icono y checkbox */
+                .icon,
+                input {
+                    display: none;
+                }
+                grid-column: 6/13;
+                justify-self: flex-end;
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .inicio {
+                        list-style: none;
+                    }
+                    li {
+                        margin: 0px 20px 0px 20px;
+                        list-style: square;
+                        a {
+                            font-family: 'Montserrat', sans-serif;
+                            text-decoration: none;
+                            color: #000;
+                            transition: .2s ease-out;
+                            &:hover {
+                                color: rgba(249, 112, 22, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+        width: 85%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    main {
+        .wave {
+            width: 100%;
+            height: 130px;
+        }
+        .wave2 {
+            background-color: #fff;
+            height: 130px;
+        }
+        .video {
+            position: relative;
+            overflow: hidden;
+            background-color: #000;
+            video {
+                width: 100%;
+                // padding: 10px 0px;
+            }
+            .absolute {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                position: absolute;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    font-size: 72px;
+                    font-weight: 900;
+                    z-index: 100;
+                    color: #fff;
+                    margin-bottom: 19px;
+                    font-family: 'Courgette', cursive;
+                    // Para crear una linea horizontal debajo del h1
+                    // &::after{
+                    //     display: block;
+                    //     width: 30%;
+                    //     height: 10px;
+                    //     content: "";
+                    //     margin: auto;
+                    //     background-color: #fff;
+                    // }
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: 'Montserrat';
+                    font-style: italic;
+                    font-size: 24px;
+                    font-weight: 200;
+                    margin-bottom: 80px;
+                    z-index: 200;
+                    cursor: text;
+                    i {
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .overlay {
+                width: 100%;
+                height: 70%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.475);
+            }
+        }
+        .ingredientes {
+            margin-top: 20px;
+            .grid {
+                .texto-ingredientes {
+                    grid-column: 1/6;
+                    h2 {
+                        text-align: center;
+                        font-size: 50px;
+                        font-family: 'Courgette', cursive;
+                        margin-bottom: 5px;
+                    }
+                    .titulo {
+                        text-align: center;
+                        font-family: Montserrat;
+                        margin-bottom: 20px;
+                        font-size: 15px;
+                        font-style: italic;
+                    }
+                    hr {
+                        width: 100px;
+                        margin: auto;
+                        background: linear-gradient(45deg, transparent 10px, currentColor 11px, transparent 12px) 0 0, linear-gradient(-45deg, transparent 10px, currentColor 11px, transparent 12px) 0 0 !important;
+                        height: 15px !important;
+                        background-color: transparent !important;
+                        background-size: 20px 20px !important;
+                        min-height: initial !important;
+                        border-color: currentColor !important;
+                        border-width: 0 !important;
+                        background-repeat: repeat !important;
+                        color: rgba(0, 0, 0, 0.4) !important;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        text-align: center;
+                        font-family: Montserrat;
+                        line-height: 27px;
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: rgba(249, 124, 42, 1);
+                        font-size: 20px;
+                    }
+                }
+                .imagen-ingredientes {
+                    width: 100%;
+                    grid-column: 8/13;
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Courgette', cursive;
+            margin-bottom: 5px;
+        }
+        .titulo {
+            text-align: center;
+            font-family: Montserrat;
+            margin-bottom: 20px;
+            font-size: 15px;
+            font-style: italic;
+        }
+        hr {
+            width: 100px;
+            margin: auto;
+            background: linear-gradient(45deg, transparent 10px, currentColor 11px, transparent 12px) 0 0, linear-gradient(-45deg, transparent 10px, currentColor 11px, transparent 12px) 0 0 !important;
+            height: 15px !important;
+            background-color: transparent !important;
+            background-size: 20px 20px !important;
+            min-height: initial !important;
+            border-color: currentColor !important;
+            border-width: 0 !important;
+            background-repeat: repeat !important;
+            color: rgba(255, 255, 255, 0.4) !important;
+            margin-bottom: 20px;
+        }
+        .chef {
+            margin-top: 80px;
+            .grid {
+                position: relative;
+                height: 100%;
+            }
+            background-color: #000;
+            .img-chef {
+                position: absolute;
+                grid-column: 1/6;
+                padding-bottom: 180px;
+                img {
+                    width: 100%;
+                }
+            }
+            .texto-chef {
+                grid-column: 8/13;
+                color: #fff;
+                padding-bottom: 180px;
+                p {
+                    text-align: center;
+                    font-family: Montserrat;
+                    line-height: 27px;
+                    margin-bottom: 20px;
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: rgba(249, 124, 42, 1);
+                    font-size: 20px;
+                }
+            }
+        }
+        .menu {
+            margin-top: 50px;
+            //background-image: url('../img/fondopizza.png');
+            position: relative;
+            margin-left: 0;
+            &::after {
+                content: "";
+                background-image: url('../img/fondopizza.png');
+                margin-left: -80px;
+                opacity: 0.3;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;
+            }
+            .titulo-menu {
+                hr {
+                    width: 100px;
+                    color: rgba(0, 0, 0, 0.4) !important;
+                }
+                h3 {
+                    font-family: Courgette;
+                    text-align: center;
+                    font-size: 35px;
+                    margin: 40px 0px;
+                }
+            }
+            article {
+                margin-bottom: 40px;
+            }
+            .col1 {
+                grid-column: 1/7;
+                .pizza-col1 {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 10px;
+                    width: 100%;
+                    margin: 0 auto;
+                    align-items: flex-start;
+                    .imagen-tipo-pizza {
+                        grid-column: 2/4;
+                        img {
+                            width: 100%;
+                            transform: scale(.95);
+                            transition: .2s;
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                    .descripcion-pizza {
+                        grid-column: 4/6;
+                        .espaciado {
+                            padding-left: 10px;
+                            h4 {
+                                color: rgb(204, 34, 37);
+                            }
+                            ul {
+                                list-style: none;
+                                margin-top: 20px;
+                                li a {
+                                    text-decoration: none;
+                                    color: rgba(119, 119, 119, 0.7);
+                                    font-family: Montserrat;
+                                    font-style: italic;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .precio-pizza {
+                        grid-column: 6/7;
+                    }
+                }
+            }
+            .col2 {
+                grid-column: 7/13;
+                .pizza-col2 {
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    gap: 10px;
+                    width: 100%;
+                    margin: 0 auto;
+                    align-items: flex-start;
+                    .imagen-tipo-pizza {
+                        grid-column: 2/4;
+                        img {
+                            width: 100%;
+                            transform: scale(.95);
+                            transition: .2s;
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                    .descripcion-pizza {
+                        grid-column: 4/6;
+                        .espaciado {
+                            padding-left: 10px;
+                            h4 {
+                                color: rgb(204, 34, 37);
+                            }
+                            ul {
+                                list-style: none;
+                                margin-top: 20px;
+                                li a {
+                                    text-decoration: none;
+                                    color: rgba(119, 119, 119, 0.7);
+                                    font-family: Montserrat;
+                                    font-style: italic;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .precio-pizza {
+                        grid-column: 6/7;
+                    }
+                }
+            }
+            >a {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                text-decoration: none;
+                font-weight: bold;
+                color: rgba(249, 124, 42, 1);
+                font-size: 20px;
+            }
+        }
+        .nuestro-restaurante {
+            background-color: #000;
+            margin-top: 90px;
+            color: #fff;
+            .texto-restaurante {
+                grid-column: 1/6;
+                .titulo {
+                    margin: 30px 0px;
+                }
+                p {
+                    text-align: center;
+                    justify-content: center;
+                    margin: 30px 0px;
+                    line-height: 27px;
+                    font-family: Montserrat;
+                }
+            }
+            .texto-restaurante,
+            .img-restaurante {
+                padding: 80px 0px;
+            }
+            .img-restaurante {
+                grid-column: 7/13;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .ubicacion {
+            .grid-ubicacion {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                gap: 10px;
+                width: 100%;
+                margin: 0 auto;
+                align-items: center;
+                overflow: hidden;
+                .mapa {
+                    grid-column: 1/7;
+                    iframe {
+                        width: 100%;
+                    }
+                }
+                .encuentranos {
+                    grid-column: 7/13;
+                    hr {
+                        width: 100px;
+                        color: rgba(0, 0, 0, 0.4) !important;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        background-image: url('../img/footer.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 95px;
+        color: #fff;
+        .footer-contenedor {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px 50px 0px;
+            background-color: #000;
+            .redes-sociales {
+                padding-bottom: 20px;
+                a {
+                    margin: 0px 15px;
+                    font-size: 30px;
+                    text-decoration: none;
+                    color: #fff;
+                    transform: scale(.9);
+                    transition: .2s;
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+            hr {
+                width: 100px;
+                margin: auto;
+                background: linear-gradient(45deg, transparent 10px, currentColor 11px, transparent 12px) 0 0, linear-gradient(-45deg, transparent 10px, currentColor 11px, transparent 12px) 0 0 !important;
+                height: 15px !important;
+                background-color: transparent !important;
+                background-size: 20px 20px !important;
+                min-height: initial !important;
+                border-color: currentColor !important;
+                border-width: 0 !important;
+                background-repeat: repeat !important;
+                color: rgba(255, 255, 255, 0.4) !important;
+            }
+            p {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .contenedor {
+        .header {
+            .grid {
+                .logo {
+                    img {
+                        width: 150px;
+                    }
+                }
+                .menu {
+                    grid-column: 3/13;
+                    ul {
+                        li {
+                            margin: 0px 13px 0px 13px;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            .video {
+                .absolute {
+                    h1 {
+                        font-size: 50px;
+                    }
+                }
+                .overlay {
+                    height: 65%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        .header {
+            .grid {
+                .logo {
+                    img {
+                        width: 120px;
+                    }
+                }
+                .menu {
+                    grid-column: 2/13;
+                    ul {
+                        li {
+                            margin: 0px 12px 0px 12px;
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .grid {
+            width: 90%;
+        }
+        main {
+            .video {
+                .absolute {
+                    h1 {
+                        font-size: 50px;
+                    }
+                }
+                .overlay {
+                    height: 60%;
+                }
+            }
+            .chef {
+                .img-chef,
+                .texto-chef {
+                    padding-bottom: 80px;
+                }
+            }
+            .menu {
+                .col1,
+                .col2 {
+                    .pizza-col1,
+                    .pizza-col2 {
+                        .imagen-tipo-pizza {
+                            grid-column: 1/3;
+                        }
+                        .descripcion-pizza {
+                            grid-column: 3/6;
+                        }
+                    }
+                }
+            }
+            .ubicacion {
+                .grid-ubicacion {
+                    .mapa {
+                        grid-column: 1/-1;
+                        grid-row: 2/3;
+                    }
+                    .encuentranos {
+                        grid-column: 1/-1;
+                        grid-row: 1/2;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        position: relative;
+        .grid {
+            /* se ajusta automatico las columnas */
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            width: 98%;
+        }
+        .header {
+            .grid {
+                .logo {
+                    grid-column: 2/-1;
+                    grid-row: 1/2;
+                    img {
+                        width: 130px;
+                    }
+                }
+                .menu {
+                    justify-self: flex-start;
+                    grid-column: 1/-1;
+                    grid-row: 1/2;
+                    .icon {
+                        display: block;
+                        color: black;
+                        font-size: 30px;
+                        padding: 5px;
+                        &:hover {
+                            background-color: #000;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                    ul {
+                        display: block;
+                        position: absolute;
+                        top: 55px;
+                        left: -600px;
+                        // left: 0px;
+                        z-index: 1000;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        width: 100%;
+                        height: 50%;
+                        transition: left 1s;
+                        li {
+                            list-style: none;
+                            background-color: rgba(255, 255, 255, 0.8);
+                            >a {
+                                font-weight: bold;
+                                padding: 10px;
+                                color: #000;
+                                display: flex;
+                                &:hover {
+                                    background-color: #000;
+                                    color: #fff;
+                                }
+                            }
+                            &:first-child {
+                                margin-top: 10px;
+                                padding-top: 10px;
+                            }
+                            &:last-child {
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                    input:checked~ul {
+                        display: block;
+                        left: 0px;
+                    }
+                }
+            }
+        }
+        main {
+            .wave {
+                width: 100%;
+                height: 50px;
+            }
+            .wave2 {
+                background-color: #fff;
+                height: 50px;
+            }
+            .video {
+                .absolute {
+                    h1 {
+                        font-size: 30px;
+                        margin-bottom: 0;
+                    }
+                    a {
+                        margin-bottom: 20px;
+                    }
+                }
+                .overlay {
+                    height: 67%;
+                }
+            }
+            .ingredientes {
+                .grid {
+                    .texto-ingredientes {
+                        grid-column: 1/-1;
+                        hr {
+                            width: 100%;
+                        }
+                    }
+                    .imagen-ingredientes {
+                        grid-column: 1/-1;
+                    }
+                }
+            }
+            .chef {
+                .img-chef {
+                    position: static;
+                    grid-column: 1/-1;
+                    padding-bottom: 0px;
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+                .texto-chef {
+                    grid-column: 1/-1;
+                    hr {
+                        width: 100%;
+                    }
+                }
+            }
+            .menu {
+                .titulo-menu {
+                    hr {
+                        width: 100%;
+                    }
+                }
+                .col1 {
+                    grid-column: 1/-1;
+                }
+                .col2 {
+                    grid-column: 1/-1;
+                }
+                >a {
+                    padding-bottom: 30px;
+                }
+            }
+            .nuestro-restaurante {
+                margin-top: 40px;
+                .texto-restaurante {
+                    grid-column: 1/-1;
+                    hr {
+                        width: 100%;
+                    }
+                }
+                .texto-restaurante,
+                .img-restaurante {
+                    padding: 0px 0px;
+                }
+                .img-restaurante {
+                    margin-bottom: 40px;
+                }
+                .img-restaurante {
+                    grid-column: 1/-1;
+                }
+            }
+            .ubicacion {
+                .grid-ubicacion {
+                    .encuentranos {
+                        hr {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            padding-top: 45px;
+            .footer-contenedor {
+                .redes-sociales {
+                    a {
+                        transform: none;
+                        transition: none;
+                        &:hover {
+                            transform: none
+                        }
+                    }
+                }
+                hr {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

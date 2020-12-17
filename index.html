@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@100;400;600&family=Source+Sans+Pro:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Italian-Pizza</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="grid">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <label for="btn" class="icon" id="icono"><span class="fa fa-bars"></span></label>
+                    <input type="checkbox" name="" id="btn">
+                    <ul id="ulmenu">
+                        <li class="inicio"><a href="#">Inicio</a></li>
+                        <li><a href="#">Menú</a></li>
+                        <li><a href="#">À Propos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="video">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ffffff" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path>
+                    </svg>
+                </div>
+                <div class="overlay"></div>
+                <div class="absolute">
+                    <h1>Auténtico sabor italiano</h1>
+                    <a href="#">En el centro de América</a>
+                    <a href="#" id="downbutton"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <video onloadedmetadata="this.muted=true" autoplay loop>
+                    <source src="video/video2.mp4">
+                </video>
+                <div class="wave2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#000000" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="ingredientes" id="ingredientes">
+                <div class="grid">
+                    <div class="texto-ingredientes">
+                        <h2>Nuestra pizza</h2>
+                        <p class="titulo">Solo ingredientes frescos</p>
+                        <hr>
+                        <p>
+                            Nuestras pizzas de corteza fina se cocinan a la manera tradicional italiana en horno de leña y con masa casera. Hechas con salsa de tomate fresca, mozzarella cremosa de búfala y deliciosas coberturas, es una de las mejores de la zona. Ven y prueba una
+                            - ¡Estamos seguros de que no te decepcionará!
+                        </p>
+                        <a href="#">Descubre más »</a>
+                    </div>
+                    <div class="imagen-ingredientes">
+                        <img src="img/pizzamain.png" alt="pizza">
+                    </div>
+                </div>
+            </section>
+
+            <section class="chef">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ffffff" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path>
+                    </svg>
+                </div>
+                <div class="grid">
+                    <div class="img-chef">
+                        <img src="img/chef.png" alt="">
+                    </div>
+                    <div class="texto-chef">
+                        <h2>El chef</h2>
+                        <p class="titulo">Un italiano auténtico</p>
+                        <hr>
+                        <p>
+                            El chef Guido Ascencio había soñado con abrir su propia pizzería desde que era un niño. Solía ver a su padre haciendo auténtica pizza italiana en la cocina de su restaurante y se imaginaba a sí mismo haciendo lo mismo. En 2015 su sueño finalmente se hizo
+                            realidad y se enorgullece de llamarse a sí mismo chef de pizza.
+                        </p>
+                        <a href="#">Descubre más »</a>
+                    </div>
+                </div>
+                <div class="wave2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#000000" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="menu">
+                <div class="titulo-menu">
+                    <h2>Especialidades del menú</h2>
+                    <p class="titulo">Todas las recetas originales</p>
+                    <hr>
+                    <h3>Pizzas</h3>
+                </div>
+                <div class="grid">
+                    <article class="col1">
+                        <div class="pizza-col1">
+                            <div class="imagen-tipo-pizza">
+                                <img src="img/Prosciutto.png" alt="Pizza Prosciutto">
+                            </div>
+                            <div class="descripcion-pizza">
+                                <h3>Prosciutto</h3>
+                                <div class="espaciado">
+                                    <h4>Nueva</h4>
+                                    <ul>
+                                        <li><a href="#">Tomates frescos</a></li>
+                                        <li><a href="#">Jamón</a></li>
+                                        <li><a href="#">Mozzarella</a></li>
+                                        <li><a href="#">Aceitunas</a></li>
+                                        <li><a href="#">Pepperoni</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="precio-pizza">
+                                <h3>12.00€</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col2">
+                        <div class="pizza-col2">
+                            <div class="imagen-tipo-pizza">
+                                <img src="img/Quattro Stagioni.png" alt="Pizza Prosciutto">
+                            </div>
+                            <div class="descripcion-pizza">
+                                <h3>Prosciutto</h3>
+                                <div class="espaciado">
+                                    <h4>Clásica</h4>
+                                    <ul>
+                                        <li><a href="#">Jamón</a></li>
+                                        <li><a href="#">Mozzarella</a></li>
+                                        <li><a href="#">Pepperoni</a></li>
+                                        <li><a href="#">Aceitunas</a></li>
+                                        <li><a href="#">Tomates frescos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="precio-pizza">
+                                <h3>12.00€</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col1">
+                        <div class="pizza-col1">
+                            <div class="imagen-tipo-pizza">
+                                <img src="img/Diavola.png" alt="Pizza Prosciutto">
+                            </div>
+                            <div class="descripcion-pizza">
+                                <h3>Diavola</h3>
+                                <div class="espaciado">
+                                    <h4>Picante</h4>
+                                    <ul>
+                                        <li><a href="#">Mozzarella</a></li>
+                                        <li><a href="#">Salami picante</a></li>
+                                        <li><a href="#">Champiñones</a></li>
+                                        <li><a href="#">Cebolla roja</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="precio-pizza">
+                                <h3>12.00€</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col2">
+                        <div class="pizza-col2">
+                            <div class="imagen-tipo-pizza">
+                                <img src="img/Margherita.png" alt="Pizza Prosciutto">
+                            </div>
+                            <div class="descripcion-pizza">
+                                <h3>Margherita</h3>
+                                <div class="espaciado">
+                                    <h4>Vegetariana</h4>
+                                    <ul>
+                                        <li><a href="#">Tomates frescos</a></li>
+                                        <li><a href="#">Mozzarella</a></li>
+                                        <li><a href="#">Albahaca</a></li>
+                                        <li><a href="#">Aceite de oliva</a></li>
+                                        <li><a href="#">Ajo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="precio-pizza">
+                                <h3>12.00€</h3>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="titulo-menu">
+                    <h3>Postres</h3>
+                </div>
+                <div class="grid">
+                    <article class="col1">
+                        <div class="pizza-col1">
+                            <div class="imagen-tipo-pizza">
+                                <img src="img/Tarta de limón.png" alt="Pizza Prosciutto">
+                            </div>
+                            <div class="descripcion-pizza">
+                                <h3>Tarta de limón</h3>
+                                <div class="espaciado">
+                                    <h4>Novedad</h4>
+                                    <ul>
+                                        <li><a href="#">Zumo de limón</a></li>
+                                        <li><a href="#">Maicena</a></li>
+                                        <li><a href="#">Huevos</a></li>
+                                        <li><a href="#">Azúcar</a></li>
+                                        <li><a href="#">Mantequilla</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="precio-pizza">
+                                <h3>3.00€</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col2">
+                        <div class="pizza-col2">
+                            <div class="imagen-tipo-pizza">
+                                <img src="img/tarta de manzana.png" alt="Pizza Prosciutto">
+                            </div>
+                            <div class="descripcion-pizza">
+                                <h3>Tarta de manzana</h3>
+                                <div class="espaciado">
+                                    <h4>Novedad</h4>
+                                    <ul>
+                                        <li><a href="#">Manzanas</a></li>
+                                        <li><a href="#">Huevos</a></li>
+                                        <li><a href="#">Zumo de limón</a></li>
+                                        <li><a href="#">Canela en polvo</a></li>
+                                        <li><a href="#">Miel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="precio-pizza">
+                                <h3>3.00€</h3>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <a href="#">Descubre más »</a>
+
+            </section>
+
+            <section class="nuestro-restaurante">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ffffff" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path>
+                    </svg>
+                </div>
+                <div class="grid">
+                    <div class="texto-restaurante">
+                        <h2>Nuestro restaurante</h2>
+                        <p class="titulo">Auténtica pizzería italiana</p>
+                        <hr>
+                        <p>
+                            Disfruta de una auténtica y deliciosa pizza en un ambiente acogedor, con un gran servicio por parte de nuestro experimentado y amigable personal. Ya sea una cena romántica para dos, un almuerzo relajado con amigos o una gran fiesta con toda la familia,
+                            nuestro restaurante es el lugar perfecto para cualquier ocasión.
+                        </p>
+                    </div>
+                    <div class="img-restaurante">
+                        <img src="img/restaurante.png" alt="">
+                    </div>
+                </div>
+                <div class="wave2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#000000" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path>
+                    </svg>
+                </div>
+
+            </section>
+            <section class="ubicacion">
+                <div class="grid-ubicacion">
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.8845723502914!2d-103.40313278557043!3d20.6335612065289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428adb4609a8de1%3A0x95f677de349e4093!2sMiguel%20Hidalgo%202528%2C%20Loma%20Bonita%20Sur%2C%2045086%20Zapopan%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sec!4v1607992980884!5m2!1ses-419!2sec"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="encuentranos">
+                        <h2>Dónde encontrarnos:</h2>
+                        <p class="titulo">Un italiano auténtico</p>
+                        <hr>
+                        <p class="titulo">
+                            Miguel Hidalgo, 2528, Guadalajara, Jalisco, C.P. 44940
+                        </p>
+                    </div>
+                    </grid-ubicacion>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <!-- <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#000000" fill-opacity="1" d="M0,128L1440,96L1440,320L0,320Z"></path>
+                </svg>
+            </div> -->
+            <div class="footer-contenedor">
+                <div class="redes-sociales">
+                    <a href="#" id="facebook" class="fab fa-facebook-f"></a>
+                    <a href="#" id="twitter" class="fab fa-twitter"></a>
+                    <a href="#" id="instagram" class="fab fa-instagram"></a>
+                    <a href="#" id="youtube" class="fab fa-youtube"></a>
+                </div>
+                <hr>
+                <p>Copyright © Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
